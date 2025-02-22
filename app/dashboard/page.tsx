@@ -36,7 +36,7 @@ const page = () => {
                 setTotalAmount(amount)
                 setTotalCount(count)
                 setReachedBudgetsRatio(reachedBudgets)
-                setBudgetData(budgetData)
+                //setBudgetData(budgetData)
                 setTransactions(lastTransactions)
                 setBudgets(lastBudgets)
                 setIsLoading(false)
