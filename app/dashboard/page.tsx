@@ -36,7 +36,15 @@ const page = () => {
                 setTotalAmount(amount)
                 setTotalCount(count)
                 setReachedBudgetsRatio(reachedBudgets)
-                setBudgetData(budgetData)
+                 setBudgetData(budgetData.map(budget => ({
+                    id: '', // Add appropriate value
+                    createdAt: new Date(), // Add appropriate value
+                    name: budget.budgetName,
+                    amount: budget.totalBudgetAmount,
+                    emoji: '', // Add appropriate value
+                    totalBudgetAmount: budget.totalBudgetAmount,
+                    totalTransactionsAmount: budget.totalTransactionsAmount
+                })))
                 setTransactions(lastTransactions)
                 setBudgets(lastBudgets)
                 setIsLoading(false)
